@@ -9,6 +9,7 @@ data/processed/
 *.csv
 *.parquet
 *.json
+*.log
 
 # Environment
 .env
