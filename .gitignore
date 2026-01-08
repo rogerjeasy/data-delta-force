@@ -38,4 +38,4 @@ models/saved_models/*.h5
 
 # OS
 .DS_Store
-Thumbs.db
+Thumbs.dboutputs/
