@@ -125,14 +125,11 @@ Financial institutions face several critical challenges:
 ### Technology Stack
 
 **Data Ingestion & Processing**
-- Apache Kafka (Real-time streaming)
-- Apache Airflow (ETL orchestration)
+- AWS (ETL orchestration)
 - Python 3.9+ (Core language)
 
 **Storage & Data Management**
 - AWS S3 (Data Lake)
-- PostgreSQL/Snowflake (Data Warehouse)
-- InfluxDB (Time Series Database)
 - AWS Glue (Metadata cataloging)
 
 **Analytics & Modeling**
@@ -141,12 +138,9 @@ Financial institutions face several critical challenges:
 - SciPy (Statistical analysis)
 
 **Visualization & Dashboards**
-- Power BI (Structured reporting)
-- Plotly/Dash (Interactive dashboards)
-- Streamlit (Ad-hoc exploration)
+- Quicksight (Interactive dashboards)
 
 **Infrastructure**
-- Docker & Docker Compose
 - AWS (Cloud infrastructure)
 <!-- - Terraform (Infrastructure as Code) -->
 
@@ -158,7 +152,6 @@ Financial institutions face several critical challenges:
 
 - Python 3.9 or higher
 - Git
-- Docker and Docker Compose (optional but recommended)
 - AWS Account (for cloud deployment)
 - API Keys for CoinGecko and FRED
 
@@ -207,48 +200,6 @@ python scripts/setup_databases.py
 ```bash
 python scripts/initial_data_load.py
 ```
-
-### Docker Setup (Recommended)
-
-```bash
-# Build and start all services
-docker-compose up -d
-
-# Check service status
-docker-compose ps
-
-# View logs
-docker-compose logs -f
-```
-
----
-
-## 📁 Project Structure
-
-```
-data-delta-force/
-├── src/                    # Source code
-│   ├── data_ingestion/     # API clients and data collection
-│   ├── data_lake/          # Data lake implementation
-│   ├── data_warehouse/     # Data warehouse ETL and schema
-│   ├── processing/         # Streaming and batch processing
-│   ├── analytics/          # Analysis and modeling
-│   ├── visualization/      # Dashboards and reports
-│   └── utils/              # Utility functions
-├── notebooks/              # Jupyter notebooks for exploration
-├── tests/                  # Unit and integration tests
-├── docs/                   # Project documentation
-├── config/                 # Configuration files
-├── data/                   # Data directory (gitignored)
-├── scripts/                # Utility scripts
-├── airflow/                # Airflow DAGs
-├── dashboards/             # Dashboard artifacts
-├── models/                 # Trained models
-├── reports/                # Generated reports
-└── infrastructure/         # Infrastructure as code
-```
-
-For detailed structure explanation, see [docs/architecture/project_structure.md](docs/architecture/project_structure.md)
 
 ---
 
@@ -308,14 +259,14 @@ mypy src/
 | Milestone | Timeline | Status |
 |-----------|----------|--------|
 | Project Proposal Submission | Week 2 (Sept 2025) | ✅ Completed |
-| Data Source Setup & Initial Ingestion | Weeks 3-4 (Oct 2025) | 🔄 In Progress |
-| Data Lake Architecture Implementation | Weeks 5-7 (Oct 2025) | 📋 Planned |
-| Mid-term Presentation | Week 8 (Nov 2025) | 📋 Planned |
-| Data Warehouse Design & Population | Weeks 9-11 (Nov 2025) | 📋 Planned |
-| Analytics & Modeling Development | Weeks 12-14 (Dec 2025) | 📋 Planned |
-| Dashboard & Visualization Creation | Weeks 15-16 (Jan 2026) | 📋 Planned |
-| Final Report Writing | Weeks 17-18 (Jan 2026) | 📋 Planned |
-| Final Presentation & Submission | Week 19 (Feb 2026) | 📋 Planned |
+| Data Source Setup & Initial Ingestion | Weeks 3-4 (Oct 2025) | ✅ Completed |
+| Data Lake Architecture Implementation | Weeks 5-7 (Oct 2025) | ✅ Completed |
+| Mid-term Presentation | Week 8 (Nov 2025) | ✅ Completed |
+| Data Warehouse Design & Population | Weeks 9-11 (Nov 2025) | ✅ Completed |
+| Analytics & Modeling Development | Weeks 12-14 (Dec 2025) | ✅ Completed |
+| Dashboard & Visualization Creation | Weeks 15-16 (Jan 2026) | ✅ Completed |
+| Final Report Writing | Weeks 17-18 (Jan 2026) | ✅ Completed |
+| Final Submission | Week 19 (Jan, 8th 2026) | ✅ Completed |
 
 ---
 
